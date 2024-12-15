@@ -1,0 +1,16 @@
+@layer theme {
+    :root {
+        --system-ui: system-ui, "Segoe UI", Robot, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --background: oklch(5% 0 0);
+        --color: oklch(78% .3 150);
+    }
+
+    * {
+        background-color: var(--background);
+        color: var(--color);
+    }
+
+    body {
+        font-family: var(--system-ui);
+    }
+}
