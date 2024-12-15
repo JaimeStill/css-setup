@@ -1,8 +1,23 @@
 @layer theme {
     :root {
+        color-scheme: dark light;
         --system-ui: system-ui, "Segoe UI", Robot, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         --background: oklch(5% 0 0);
         --color: oklch(78% .3 150);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background: okclh(5% 0 0);
+            --color: oklch(78% .3 150);
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --background: oklch(98% 0 0);
+            --color: oklch(58% .3 150);
+        }
     }
 
     * {
