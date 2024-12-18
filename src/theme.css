@@ -1,35 +1,52 @@
 /*
     fonts and colors
+    colors derived from: https://primer.style/prism
 */
 @layer theme {
     :root {
         color-scheme: dark light;
-        --space-mono: "Space Mono", monospace;
         --system-ui: system-ui, "Segoe UI", Robot, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        --background: oklch(5% 0 0);
-        --color: oklch(78% .3 150);
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
             --background: oklch(5% 0 0);
-            --color: oklch(78% .3 150);
+            --color: oklch(95% 0 0);
+            --border: oklch(70% 0 0);
+            --card: oklch(2% 0 0);
+            --blue: #80ccff;
+            --green: #6fdd8b;
+            --yellow: #eac54f;
+            --orange: #ffb77c;
+            --red: #ffaba8;
+            --purple: #d8b9ff;
         }
     }
 
     @media (prefers-color-scheme: light) {
         :root {
-            --background: oklch(98% 0 0);
-            --color: oklch(58% .3 150);
+            --background: oklch(95% 0 0);
+            --color: oklch(5% 0 0);
+            --border: oklch(30% 0 0);
+            --card: oklch(98% 0 0);
+            --blue: #0969da;
+            --green: #1a7f37;
+            --yellow: #9a6700;
+            --orange: #bc4c00;
+            --red: #cf222e;
+            --purple: #8250df;
         }
-    }
-
-    * {
-        background-color: var(--background);
-        color: var(--color);
     }
 
     body {
         font-family: var(--system-ui);
+        background-color: var(--background);
+        color: var(--color);
+    }
+
+    pre,
+    code {
+        color: var(--green);
+        font-size: .9rem;
     }
 }

@@ -11,10 +11,8 @@
         --size-2xl: 1.5rem;
         --size-3xl: 2.652rem;
         --size-4xl: 4rem;
+        --pad-sm: 4px;
         --pad: 8px;
-    }
-
-    body {
-        padding: var(--pad);
+        --pad-lg: 12px;
     }
 }

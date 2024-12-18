@@ -2,9 +2,11 @@
     References:
     - MDN: https://developer.mozilla.org
     - web.dev: https://web.dev
+    - Primer: https://primer.style/
     - CSS Tricks: https://css-tricks.com
     - Josh Comeau: https://www.joshwcomeau.com
     - Kevin Powell: https://www.youtube.com/kevinpowell
+    - Stephanie Eckles: https://moderncss.dev/
     - Chris Coyier: https://chriscoyier.net
     - Una Kravets: https://una.im
 */
@@ -14,3 +16,11 @@
 @import url(./reset.css);
 @import url(./theme.css);
 @import url(./layout.css);
+
+body {
+    padding: var(--pad);
+}
+
+p+p {
+    margin-top: var(--pad);
+}
